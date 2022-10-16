@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(240, 240, 240, 0.489);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(223, 252, 252);
+}
+
+h1 {
+    font-size: clamp(1.2rem, 3.0vw, 2rem);
+    max-width: 100%;    
+    margin: 5%;
+    z-index: 2;
+    font-weight: 800;
+}
+
+p {
+    font-size: clamp(1rem, 2.4vw, 1.6rem);
+    font-weight: 500;
+    margin: 0;
+}
+
+.superPower {
+    margin: 1rem 0;
+}
+
+.card {
+    width: 92%;
+    height: auto;
+    background: linear-gradient(300deg, #7f7fd5, #86a8e7, #91eae4);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 3rem;
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.489);
+
+}
+
+img {
+    border: rgb(223, 252, 252) 2px solid;
+    border-radius: 50%;
+    width: 35%;
+    height: auto;
+    margin: 5%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradiente 15s ease infinite;
+
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: end;
+    align-items: center;
+
+
+}
+
+.text {
+    margin: 5%;
+}
+
+.text p a:nth-child(1) {
+    color: rgb(154,18,179);
+    text-decoration: none;
+}
+.text p a:nth-child(2) {
+    color: #E6C16E;
+    text-decoration: none;
+}
+
+
+    .line {
+        content: "";
+        background-color: black;
+        width: 2rem;
+        height: 3px;
+        align-self: flex-end;
+        margin-right: 2rem;
+    }
+
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 890px) {
+    img {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    max-width: 8rem;
+    margin: 0;
+    }
+
+    .header h1 {
+    justify-content: flex-end;
+    margin-left: 20%;
+    }
+
+    .header {
+        justify-content: flex-end;
+    }
+
+}
+
+
+@keyframes gradiente {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
